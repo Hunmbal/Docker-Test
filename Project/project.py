@@ -22,10 +22,11 @@ def get_weather(city):
 
 
 if __name__ == "__main__":     
-    city = "karachi"  
+    city = "pindi"  
     weather_data = get_weather(city)
     print(weather_data, "\n")
 
     app.run(debug=True)
+    rfjdsaiogjsiofh;i
 
 
