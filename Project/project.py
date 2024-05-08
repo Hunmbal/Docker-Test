@@ -27,6 +27,5 @@ if __name__ == "__main__":
     print(weather_data, "\n")
 
     app.run(debug=True)
-    rfjdsaiogjsiofh;i
 
 
