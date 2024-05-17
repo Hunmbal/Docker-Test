@@ -1,34 +1,78 @@
 body {
-    background-image: url('rain.gif'); /* Path to your image */
-    background-size: cover; /* Cover the entire viewport */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* Fixed background image */
-    background-size: 100% 100%; /* Ensure the image covers the entire background */
-    font-family: Arial, sans-serif; /* Use Arial or sans-serif font */
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
 }
 
 .container {
-    max-width: 800px; /* Maximum width of the container */
-    margin: 50px auto; /* Center the container horizontally with 50px top and bottom margin */
-    padding: 20px; /* Add padding inside the container */
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-    border-radius: 5px; /* Rounded corners for the container */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    width: 90%;
+    max-width: 1000px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
 
 h1 {
-    text-align: center; /* Center-align the heading */
+    margin-bottom: 20px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #9b59b6;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8e44ad;
+}
+
+/* .weather-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+} */
+
 .weather-info {
-    margin-top: 20px; /* Add space above the weather info */
-    display: flex; /* Use flexbox layout for weather info */
-    justify-content: space-between; /* Space elements evenly within the container */
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .weather-info p {
-    margin: 5px 0; /* Add margin above and below each paragraph */
+    margin: 5px 0;
+    font-size: 1.1em;
 }

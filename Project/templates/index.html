@@ -19,16 +19,10 @@
         <div class="weather-info">
             <p><strong>Temperature:</strong> {{ weather['main']['temp'] }} K</p>
             <p><strong>Feels Like:</strong> {{ weather['main']['feels_like'] }} K</p>
-        </div>
-        <div class="weather-info">
             <p><strong>Description:</strong> {{ weather['weather'][0]['description'] }}</p>
             <p><strong>Humidity:</strong> {{ weather['main']['humidity'] }}%</p>
-        </div>
-        <div class="weather-info">
             <p><strong>Wind Speed:</strong> {{ weather['wind']['speed'] }} m/s</p>
             <p><strong>Pressure:</strong> {{ weather['main']['pressure'] }} hPa</p>
-        </div>
-        <div class="weather-info">
             <p><strong>Latitude:</strong> {{ weather['coord']['lat'] }}</p>
             <p><strong>Longitude:</strong> {{ weather['coord']['lon'] }}</p>
         </div>
