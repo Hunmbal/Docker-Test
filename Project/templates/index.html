@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Information</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <div class="container">
@@ -12,19 +13,19 @@
         <form method="POST" action="/">
             <label for="city">Enter City:</label>
             <input type="text" id="city" name="city" required>
-            <button type="submit">Get Weather</button>
+            <button type="submit" class="button-get-weather">Get Weather</button>
         </form>
         {% if weather %}
         <h2>Weather Information for {{ weather['name'] }}</h2>
         <div class="weather-info">
-            <p><strong>Temperature:</strong> {{ weather['main']['temp'] }} K</p>
-            <p><strong>Feels Like:</strong> {{ weather['main']['feels_like'] }} K</p>
-            <p><strong>Description:</strong> {{ weather['weather'][0]['description'] }}</p>
-            <p><strong>Humidity:</strong> {{ weather['main']['humidity'] }}%</p>
-            <p><strong>Wind Speed:</strong> {{ weather['wind']['speed'] }} m/s</p>
-            <p><strong>Pressure:</strong> {{ weather['main']['pressure'] }} hPa</p>
-            <p><strong>Latitude:</strong> {{ weather['coord']['lat'] }}</p>
-            <p><strong>Longitude:</strong> {{ weather['coord']['lon'] }}</p>
+            <p><i class="fas fa-thermometer-half icon"></i><strong>Temperature:</strong> {{ weather['main']['temp'] }} K</p>
+            <p><i class="fas fa-thermometer-quarter icon"></i><strong>Feels Like:</strong> {{ weather['main']['feels_like'] }} K</p>
+            <p><i class="fas fa-info-circle icon"></i><strong>Description:</strong> {{ weather['weather'][0]['description'] }}</p>
+            <p><i class="fas fa-tint icon"></i><strong>Humidity:</strong> {{ weather['main']['humidity'] }}%</p>
+            <p><i class="fas fa-wind icon"></i><strong>Wind Speed:</strong> {{ weather['wind']['speed'] }} m/s</p>
+            <p><i class="fas fa-tachometer-alt icon"></i><strong>Pressure:</strong> {{ weather['main']['pressure'] }} hPa</p>
+            <p><i class="fas fa-map-marker-alt icon"></i><strong>Latitude:</strong> {{ weather['coord']['lat'] }}</p>
+            <p><i class="fas fa-map-marker-alt icon"></i><strong>Longitude:</strong> {{ weather['coord']['lon'] }}</p>
         </div>
         {% endif %}
     </div>
