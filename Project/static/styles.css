@@ -3,8 +3,8 @@ body {
     margin: 0;
     padding: 0;
     background-image: url('https://i.pinimg.com/564x/b1/8b/db/b18bdb35b906dfa76a4809f4964d05a8.jpg');
-    background-size: cover; /* This ensures the background image covers the entire container */
-    background-position: center; /* This centers the background image */
+    background-size: cover; 
+    background-position: center; 
     color: #fff;
     display: flex;
     justify-content: center;
@@ -19,13 +19,13 @@ body {
     padding: 20px;
     box-sizing: border-box;
     background: rgba(70, 104, 175, 0.9);
-    border-radius: 20px; /* Make container edges rounder */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow under container */
+    border-radius: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 h1 {
     margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Make text glow */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
 }
 
 form {
@@ -37,7 +37,7 @@ form {
 label {
     margin-bottom: 10px;
     font-size: 1.2em;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Make text glow */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
 }
 
 input {
@@ -46,7 +46,7 @@ input {
     border: none;
     border-radius: 5px;
     font-size: 1em;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Slight shadow for input fields */
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); 
 }
 
 .button-get-weather {
@@ -57,14 +57,14 @@ input {
     background-color: #3498db;
     color: #fff;
     cursor: pointer;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Button shadow */
-    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; 
 }
 
 .button-get-weather:hover {
     background-color: #2980b9;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
-    transform: scale(1.05); /* Slightly scale up the button on hover */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05); 
 }
 
 .weather-info {
@@ -81,7 +81,7 @@ input {
 .weather-info p {
     margin: 5px 0;
     font-size: 1.1em;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Make text glow */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
 }
 
 .weather-info .icon {
