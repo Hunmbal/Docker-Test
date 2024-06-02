@@ -2,7 +2,6 @@ import os
 import requests
 from flask import Flask, request, render_template
 
-
 os.system("cls")
 api_key = "a4d611d55373c1d9b2e482ea62c67a91"
 
