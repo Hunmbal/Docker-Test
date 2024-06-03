@@ -1,11 +1,16 @@
 import os 
 import requests
 from flask import Flask, request, render_template
+from datetime import datetime
 
 os.system("cls")
 api_key = "a4d611d55373c1d9b2e482ea62c67a91"
 
 app = Flask(__name__, static_url_path='/static')
+
+@app.template_filter('datetimeformat')
+def datetimeformat(value, format='%H:%M / %d-%m-%Y'):
+    return datetime.strptime(value, '%Y-%m-%d %H:%M:%S').strftime(format)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -20,11 +25,10 @@ def index():
         return render_template('index.html', weather=weather_data)
 
 def get_weather(city):
-    url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}"
+    url = f"http://api.openweathermap.org/data/2.5/forecast?q={city}&cnt={7*10}&appid={api_key}"
     temp = requests.get(url)
     data = temp.json()
     return data
-
 
 if __name__ == "__main__":     
     city = "karachi"  
@@ -32,4 +36,3 @@ if __name__ == "__main__":
     print(weather_data, "\n")
 
     app.run(host='0.0.0.0', port=5000)
-    
