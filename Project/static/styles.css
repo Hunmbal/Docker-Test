@@ -32,11 +32,6 @@
  [hidden], template {
    display: none; }
  
- html {
-   background: #fff;
-   color: #000;
-   -webkit-text-size-adjust: 100%;
-   -ms-text-size-adjust: 100%; }
  
  html,
  button,
@@ -201,14 +196,10 @@
    border-collapse: collapse;
    border-spacing: 0; }
  
- *, *:before, *:after {
-   box-sizing: border-box; }
  
  /*
   * Global Styles
   */
- html {
-   font-size: 14px; }
  
 body {
     height: 100%;
@@ -216,7 +207,7 @@ body {
     padding: 0;
     justify-content: center;
     align-items: center;
-    background: #1e202b;
+    background: url("test.jpg");
     background-size: cover;
     color: #bfc1c8;
     font-family: "Roboto", "Open Sans", sans-serif;
@@ -225,11 +216,11 @@ body {
     line-height: 1.5;
 }
 
-html {
+/* html {
     background: #fff;
     color: #000;
     -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%; }
+    -ms-text-size-adjust: 100%; } */
 
 .site-content {
     text-align: center;
@@ -1623,7 +1614,7 @@ html {
  .contact-form .text-right {
    text-align: right; }
  
- .sidebar .widget {
+ /* .sidebar .widget {
    background: #262936;
    border-radius: 10px;
    padding: 20px;
@@ -1655,11 +1646,11 @@ html {
          color: #bfc1c8; }
      .sidebar .widget.top-rated .rating strong {
        color: #009ad8; }
- 
+  */
  /*
   * Footer Styles
   */
- .site-footer {
+ /* .site-footer {
    background: #262936;
    padding: 50px 0; }
    .site-footer .subscribe-form {
@@ -1690,5 +1681,5 @@ html {
      font-size: 1.4285714286em; }
      .site-footer .social-links a:hover {
        background: #009ad8;
-       color: white; }
+       color: white; } */
  
